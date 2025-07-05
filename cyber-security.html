@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Security Course | Smart Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #181818;
+      color: #f1f1f1;
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #232526 0%, #0f2027 100%);
+      color: #ffd700;
+      padding: 2.5rem 1rem 1.5rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      color: #4fc3f7;
+      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+      letter-spacing: 1.5px;
+      text-shadow: 0 2px 8px #0008;
+    }
+    header p {
+      color: #ffd700;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .back-dashboard {
+      display: inline-block;
+      margin: 1.5rem 0 1rem 2rem;
+      padding: 0.6rem 1.2rem;
+      background: #232526;
+      color: #ffd700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: background 0.2s, color 0.2s;
+    }
+    .back-dashboard:hover {
+      background: #4fc3f7;
+      color: #181818;
+    }
+    main {
+      background: #23272b;
+      max-width: 950px;
+      margin: 2rem auto;
+      padding: 2.5rem 2rem;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #4fc3f7;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .course-section {
+      margin-bottom: 2.2rem;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.7rem;
+      line-height: 1.6;
+    }
+    .notes-box {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 1.2rem 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+    }
+    .notes-box h3 {
+      color: #ffd700;
+      margin-top: 0;
+    }
+    .video-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .video-card {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+      text-align: left;
+    }
+    .video-card h3 {
+      color: #ffd700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .video-card iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      background: #000;
+    }
+    @media (max-width: 900px) {
+      main { padding: 1rem; }
+      .video-list { grid-template-columns: 1fr; }
+      .back-dashboard { margin-left: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cyber Security</h1>
+    <p>Welcome to your course dashboard! Start learning and track your progress below.</p>
+  </header>
+
+  <a href="index.html" class="back-dashboard">← Back to Dashboard</a>
+
+  <main>
+    <section class="course-section">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Introduction to Cyber Security</li>
+        <li>Types of Threats: Malware, Phishing, Ransomware</li>
+        <li>Network Security Fundamentals</li>
+        <li>Cryptography Basics</li>
+        <li>Authentication & Access Control</li>
+        <li>Firewalls & Intrusion Detection</li>
+        <li>Web Security & Secure Coding</li>
+        <li>Ethical Hacking & Penetration Testing</li>
+        <li>Incident Response & Best Practices</li>
+      </ul>
+    </section>
+
+    <section class="course-section">
+      <h2>Elaborated Notes</h2>
+      <div class="notes-box">
+        <h3>1. Introduction to Cyber Security</h3>
+        <ul>
+          <li><strong>Definition:</strong> Protecting systems, networks, and data from digital attacks.</li>
+          <li><strong>Importance:</strong> Prevents data breaches, financial loss, and reputational damage.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>2. Types of Threats</h3>
+        <ul>
+          <li><strong>Malware:</strong> Malicious software like viruses, worms, trojans.</li>
+          <li><strong>Phishing:</strong> Fraudulent attempts to obtain sensitive information.</li>
+          <li><strong>Ransomware:</strong> Malware that encrypts data and demands ransom.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>3. Network Security Fundamentals</h3>
+        <ul>
+          <li><strong>Network Protocols:</strong> TCP/IP, UDP, HTTP, HTTPS.</li>
+          <li><strong>Network Devices:</strong> Routers, switches, firewalls.</li>
+          <li><strong>Segmentation:</strong> Dividing networks to limit access.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>4. Cryptography Basics</h3>
+        <ul>
+          <li><strong>Encryption:</strong> Converting data into unreadable form.</li>
+          <li><strong>Symmetric & Asymmetric:</strong> Single-key (AES) and public/private key (RSA) encryption.</li>
+          <li><strong>Hashing:</strong> One-way transformation (SHA-256, MD5).</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>5. Authentication & Access Control</h3>
+        <ul>
+          <li><strong>Authentication:</strong> Verifying user identity (passwords, biometrics, 2FA).</li>
+          <li><strong>Access Control:</strong> Granting/restricting user permissions (RBAC, ACL).</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>6. Firewalls & Intrusion Detection</h3>
+        <ul>
+          <li><strong>Firewalls:</strong> Monitor and control incoming/outgoing network traffic.</li>
+          <li><strong>IDS/IPS:</strong> Intrusion Detection/Prevention Systems for threat monitoring.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>7. Web Security & Secure Coding</h3>
+        <ul>
+          <li><strong>Common Attacks:</strong> XSS, SQL Injection, CSRF.</li>
+          <li><strong>Best Practices:</strong> Input validation, output encoding, least privilege.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>8. Ethical Hacking & Penetration Testing</h3>
+        <ul>
+          <li><strong>Ethical Hacking:</strong> Authorized testing to find vulnerabilities.</li>
+          <li><strong>Penetration Testing:</strong> Simulated attacks to assess security.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>9. Incident Response & Best Practices</h3>
+        <ul>
+          <li><strong>Incident Response:</strong> Steps to detect, contain, eradicate, and recover from attacks.</li>
+          <li><strong>Best Practices:</strong> Regular updates, backups, user training, monitoring.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="course-section">
+      <h2>Course Videos</h2>
+      <div class="video-list">
+        <div class="video-card">
+          <h3>1. Introduction to Cyber Security</h3>
+          <iframe src="https://www.youtube.com/embed/inWWhr5tnEA" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>2. Types of Threats</h3>
+          <iframe src="https://www.youtube.com/embed/OVzQO0skh9A" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>3. Network Security Fundamentals</h3>
+          <iframe src="https://www.youtube.com/embed/3QhU9jd03a0" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>4. Cryptography Basics</h3>
+          <iframe src="https://www.youtube.com/embed/6g1P9ud5wqg" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>5. Authentication & Access Control</h3>
+          <iframe src="https://www.youtube.com/embed/8g9hP6j6v6Q" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>6. Firewalls & IDS</h3>
+          <iframe src="https://www.youtube.com/embed/2e--pBWG1gQ" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>7. Web Security & Secure Coding</h3>
+          <iframe src="https://www.youtube.com/embed/8QpcY6oK7xw" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>8. Ethical Hacking & Pen Testing</h3>
+          <iframe src="https://www.youtube.com/embed/5g0LGoG7b_8" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>9. Incident Response & Best Practices</h3>
+          <iframe src="https://www.youtube.com/embed/2JYT5f2isg4" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C++ Programming Course | Smart Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #181818;
+      color: #f1f1f1;
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #232526 0%, #485563 100%);
+      color: #ffd700;
+      padding: 2.5rem 1rem 1.5rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      color: #4fc3f7;
+      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+      letter-spacing: 1.5px;
+      text-shadow: 0 2px 8px #0008;
+    }
+    header p {
+      color: #ffd700;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .back-dashboard {
+      display: inline-block;
+      margin: 1.5rem 0 1rem 2rem;
+      padding: 0.6rem 1.2rem;
+      background: #232526;
+      color: #ffd700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: background 0.2s, color 0.2s;
+    }
+    .back-dashboard:hover {
+      background: #4fc3f7;
+      color: #181818;
+    }
+    main {
+      background: #23272b;
+      max-width: 950px;
+      margin: 2rem auto;
+      padding: 2.5rem 2rem;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #4fc3f7;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .course-section {
+      margin-bottom: 2.2rem;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.7rem;
+      line-height: 1.6;
+    }
+    .notes-box {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 1.2rem 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+    }
+    .notes-box h3 {
+      color: #ffd700;
+      margin-top: 0;
+    }
+    .video-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .video-card {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+      text-align: left;
+    }
+    .video-card h3 {
+      color: #ffd700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .video-card iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      background: #000;
+    }
+    @media (max-width: 900px) {
+      main { padding: 1rem; }
+      .video-list { grid-template-columns: 1fr; }
+      .back-dashboard { margin-left: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>C++ Programming</h1>
+    <p>Welcome to your course dashboard! Start learning and track your progress below.</p>
+  </header>
+
+  <a href="index.html" class="back-dashboard">← Back to Dashboard</a>
+
+  <main>
+    <section class="course-section">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>C++ Syntax and Structure</li>
+        <li>Variables, Data Types, and Operators</li>
+        <li>Control Flow: if, else, loops</li>
+        <li>Functions and Scope</li>
+        <li>Arrays, Strings, and Pointers</li>
+        <li>Object-Oriented Programming: Classes & Objects</li>
+        <li>Inheritance, Polymorphism, Encapsulation</li>
+        <li>STL (Standard Template Library)</li>
+        <li>File Handling</li>
+        <li>Practical Projects</li>
+      </ul>
+    </section>
+
+    <section class="course-section">
+      <h2>Elaborated Notes</h2>
+      <div class="notes-box">
+        <h3>1. C++ Syntax and Structure</h3>
+        <ul>
+          <li><strong>Header Files:</strong> <code>#include &lt;iostream&gt;</code> for input/output.</li>
+          <li><strong>Main Function:</strong> <code>int main() { ... }</code> is the entry point.</li>
+          <li><strong>Statements:</strong> End with a semicolon <code>;</code>.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>2. Variables, Data Types, and Operators</h3>
+        <ul>
+          <li><strong>Data Types:</strong> int, float, double, char, bool, string.</li>
+          <li><strong>Operators:</strong> Arithmetic (+, -, *, /), Relational (==, !=, &lt;, &gt;), Logical (&&, ||, !).</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>3. Control Flow</h3>
+        <ul>
+          <li><strong>Conditional:</strong> if, else if, else, switch-case.</li>
+          <li><strong>Loops:</strong> for, while, do-while.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>4. Functions and Scope</h3>
+        <ul>
+          <li><strong>Function Declaration:</strong> <code>int add(int a, int b);</code></li>
+          <li><strong>Function Definition:</strong> <code>int add(int a, int b) { return a + b; }</code></li>
+          <li><strong>Scope:</strong> Local and global variables.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>5. Arrays, Strings, and Pointers</h3>
+        <ul>
+          <li><strong>Arrays:</strong> <code>int arr[5];</code></li>
+          <li><strong>Strings:</strong> <code>char str[10];</code> or <code>string s;</code> (with <code>#include &lt;string&gt;</code>).</li>
+          <li><strong>Pointers:</strong> <code>int *ptr = &amp;var;</code></li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>6. Object-Oriented Programming</h3>
+        <ul>
+          <li><strong>Classes & Objects:</strong> <code>class Car { ... };</code></li>
+          <li><strong>Encapsulation:</strong> Using private/public members.</li>
+          <li><strong>Inheritance:</strong> <code>class Child : public Parent { ... };</code></li>
+          <li><strong>Polymorphism:</strong> Function overloading and overriding.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>7. STL (Standard Template Library)</h3>
+        <ul>
+          <li><strong>Containers:</strong> vector, list, map, set, etc.</li>
+          <li><strong>Algorithms:</strong> sort, find, reverse, etc.</li>
+          <li><strong>Iterators:</strong> Used to traverse containers.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>8. File Handling</h3>
+        <ul>
+          <li><strong>Include:</strong> <code>#include &lt;fstream&gt;</code></li>
+          <li><strong>Reading/Writing:</strong> <code>ifstream fin("file.txt");</code>, <code>ofstream fout("file.txt");</code></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="course-section">
+      <h2>Course Videos</h2>
+      <div class="video-list">
+        <div class="video-card">
+          <h3>1. C++ Basics & Setup</h3>
+          <iframe src="https://www.youtube.com/embed/vLnPwxZdW4Y" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>2. Variables, Data Types & Operators</h3>
+          <iframe src="https://www.youtube.com/embed/INh3V2xfmrU" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>3. Control Flow in C++</h3>
+          <iframe src="https://www.youtube.com/embed/8jLOx1hD3_o" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>4. Functions & Scope</h3>
+          <iframe src="https://www.youtube.com/embed/5o3fMLPY7qY" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>5. Arrays, Strings & Pointers</h3>
+          <iframe src="https://www.youtube.com/embed/ZzaPdXTrSb8" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>6. OOP in C++</h3>
+          <iframe src="https://www.youtube.com/embed/xnqTKD8uD64" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>7. STL in C++</h3>
+          <iframe src="https://www.youtube.com/embed/1OEu9C51K2A" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>8. File Handling in C++</h3>
+          <iframe src="https://www.youtube.com/embed/6u_pvFzjG6E" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

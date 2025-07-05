@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ask Doubts | SmartEdu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #181818;
+      color: #f1f1f1;
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    header.hero {
+      background: linear-gradient(90deg, #232526 0%, #414345 100%);
+      color: #ffd700;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    header.hero h1 {
+      color: #4fc3f7;
+      margin-bottom: 0.5rem;
+      font-size: 2.2rem;
+      letter-spacing: 1.5px;
+      text-shadow: 0 2px 8px #0008;
+    }
+    .ask-doubt-section {
+      max-width: 600px;
+      margin: 3rem auto 2rem auto;
+      background: #23272b;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(79,195,247,0.10);
+      padding: 2rem;
+      text-align: center;
+    }
+    .ask-doubt-section label {
+      color: #b2ebf2;
+      font-weight: 600;
+      display: block;
+      text-align: left;
+      margin-bottom: 0.5rem;
+    }
+    .ask-doubt-section textarea {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1.5px solid #4fc3f7;
+      background: #181818;
+      color: #f1f1f1;
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      resize: vertical;
+      transition: border 0.2s;
+    }
+    .ask-doubt-section textarea:focus {
+      border: 1.5px solid #ffd700;
+      outline: none;
+    }
+    .ask-doubt-section button {
+      background: #4fc3f7;
+      color: #181818;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .ask-doubt-section button:hover {
+      background: #1976d2;
+      color: #fff;
+    }
+    .back-dashboard {
+      display: inline-block;
+      margin: 1.5rem 0 1rem 2rem;
+      padding: 0.6rem 1.2rem;
+      background: #232526;
+      color: #ffd700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: background 0.2s, color 0.2s;
+    }
+    .back-dashboard:hover {
+      background: #4fc3f7;
+      color: #181818;
+    }
+    footer {
+      background: #232526;
+      color: #b0bec5;
+      text-align: center;
+      padding: 1rem;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>Ask Your Doubts</h1>
+    <p>Have a question? Post it and get answers!</p>
+  </header>
+
+  <div class="ask-doubt-section">
+    <form id="doubtForm">
+      <label for="question"><strong>Your Question:</strong></label>
+      <textarea id="question" rows="5" placeholder="Type your question here..." required></textarea>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <a href="index.html" class="back-dashboard">← Back to Dashboard</a>
+
+  <footer>
+    <p>&copy; 2025 SmartEdu. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("doubtForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const question = document.getElementById("question").value;
+      if (question.trim() === "") {
+        alert("Please enter a question.");
+        return;
+      }
+      alert("Your question has been submitted!");
+      document.getElementById("question").value = "";
+    });
+  </script>
+</body>
+</html>

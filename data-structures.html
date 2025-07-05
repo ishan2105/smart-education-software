@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Structures Course | Smart Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #181818;
+      color: #f1f1f1;
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #232526 0%, #11998e 100%);
+      color: #ffd700;
+      padding: 2.5rem 1rem 1.5rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      color: #4fc3f7;
+      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+      letter-spacing: 1.5px;
+      text-shadow: 0 2px 8px #0008;
+    }
+    header p {
+      color: #ffd700;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .back-dashboard {
+      display: inline-block;
+      margin: 1.5rem 0 1rem 2rem;
+      padding: 0.6rem 1.2rem;
+      background: #232526;
+      color: #ffd700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: background 0.2s, color 0.2s;
+    }
+    .back-dashboard:hover {
+      background: #4fc3f7;
+      color: #181818;
+    }
+    main {
+      background: #23272b;
+      max-width: 950px;
+      margin: 2rem auto;
+      padding: 2.5rem 2rem;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #43cea2;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .course-section {
+      margin-bottom: 2.2rem;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.7rem;
+      line-height: 1.6;
+    }
+    .notes-box {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 1.2rem 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+    }
+    .notes-box h3 {
+      color: #ffd700;
+      margin-top: 0;
+    }
+    .video-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .video-card {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+      text-align: left;
+    }
+    .video-card h3 {
+      color: #ffd700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .video-card iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      background: #000;
+    }
+    @media (max-width: 900px) {
+      main { padding: 1rem; }
+      .video-list { grid-template-columns: 1fr; }
+      .back-dashboard { margin-left: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Data Structures</h1>
+    <p>Welcome to your course dashboard! Start learning and track your progress below.</p>
+  </header>
+
+  <a href="index.html" class="back-dashboard">← Back to Dashboard</a>
+
+  <main>
+    <section class="course-section">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Introduction to Data Structures</li>
+        <li>Arrays and Linked Lists</li>
+        <li>Stacks and Queues</li>
+        <li>Trees and Binary Trees</li>
+        <li>Graphs and Traversal Algorithms</li>
+        <li>Hashing and Hash Tables</li>
+        <li>Searching and Sorting Algorithms</li>
+        <li>Applications and Real-world Problems</li>
+      </ul>
+    </section>
+
+    <section class="course-section">
+      <h2>Elaborated Notes</h2>
+      <div class="notes-box">
+        <h3>1. Introduction to Data Structures</h3>
+        <ul>
+          <li><strong>Definition:</strong> Ways to organize and store data for efficient access and modification.</li>
+          <li><strong>Types:</strong> Linear (arrays, lists), Non-linear (trees, graphs).</li>
+          <li><strong>Importance:</strong> Impacts performance of algorithms and applications.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>2. Arrays and Linked Lists</h3>
+        <ul>
+          <li><strong>Arrays:</strong> Fixed-size, random access, contiguous memory.</li>
+          <li><strong>Singly Linked List:</strong> Nodes with data and next pointer.</li>
+          <li><strong>Doubly Linked List:</strong> Nodes with data, next and previous pointers.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>3. Stacks and Queues</h3>
+        <ul>
+          <li><strong>Stack:</strong> LIFO (Last In First Out), operations: push, pop, peek.</li>
+          <li><strong>Queue:</strong> FIFO (First In First Out), operations: enqueue, dequeue, front.</li>
+          <li><strong>Applications:</strong> Expression evaluation, scheduling, undo mechanisms.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>4. Trees and Binary Trees</h3>
+        <ul>
+          <li><strong>Tree:</strong> Hierarchical structure with root, nodes, leaves.</li>
+          <li><strong>Binary Tree:</strong> Each node has at most two children.</li>
+          <li><strong>Traversals:</strong> Inorder, Preorder, Postorder.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>5. Graphs and Traversal Algorithms</h3>
+        <ul>
+          <li><strong>Graph:</strong> Set of nodes (vertices) connected by edges.</li>
+          <li><strong>Representation:</strong> Adjacency matrix, adjacency list.</li>
+          <li><strong>Traversal:</strong> BFS (Breadth-First Search), DFS (Depth-First Search).</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>6. Hashing and Hash Tables</h3>
+        <ul>
+          <li><strong>Hash Function:</strong> Maps keys to indices in a table.</li>
+          <li><strong>Collisions:</strong> When two keys hash to the same index.</li>
+          <li><strong>Handling Collisions:</strong> Chaining, open addressing.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>7. Searching and Sorting Algorithms</h3>
+        <ul>
+          <li><strong>Searching:</strong> Linear search, binary search.</li>
+          <li><strong>Sorting:</strong> Bubble, selection, insertion, merge, quick sort.</li>
+          <li><strong>Complexity:</strong> Time and space analysis.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>8. Applications and Real-world Problems</h3>
+        <ul>
+          <li><strong>Use Cases:</strong> Databases, compilers, networking, AI, OS.</li>
+          <li><strong>Choosing Data Structures:</strong> Based on problem requirements and constraints.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="course-section">
+      <h2>Course Videos</h2>
+      <div class="video-list">
+        <div class="video-card">
+          <h3>1. Introduction to Data Structures</h3>
+          <iframe src="https://www.youtube.com/embed/sVxBVvlnJsM" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>2. Arrays and Linked Lists</h3>
+          <iframe src="https://www.youtube.com/embed/1U5LO6gG6cA" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>3. Stacks and Queues</h3>
+          <iframe src="https://www.youtube.com/embed/0A40XJH_VvE" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>4. Trees and Binary Trees</h3>
+          <iframe src="https://www.youtube.com/embed/9RHO6jU--GU" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>5. Graphs and Traversal Algorithms</h3>
+          <iframe src="https://www.youtube.com/embed/09_LlHjoEiY" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>6. Hashing and Hash Tables</h3>
+          <iframe src="https://www.youtube.com/embed/shs0KM3wKv8" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>7. Searching and Sorting Algorithms</h3>
+          <iframe src="https://www.youtube.com/embed/COk73cpQbFQ" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>8. Applications and Real-world Problems</h3>
+          <iframe src="https://www.youtube.com/embed/bum_19loj9A" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz | SmartEdu</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .quiz-container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    #submitBtn {
+      margin-top: 20px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+    #backButton {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #4f46e5;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+    }
+    #backButton:hover {
+      background: #3b3be5;
+    }
+  </style>
+</head>
+<head>
+  <!-- ...existing head code... -->
+  <link rel="stylesheet" href="quiz-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Basic Coding Quiz</h1>
+    <p>Test your fundamental coding knowledge</p>
+  </header>
+
+  <section class="quiz-container">
+    <form id="quizForm">
+      <!-- Questions will be inserted here -->
+    </form>
+    <button id="submitBtn">Submit Quiz</button>
+    <div id="result"></div>
+
+    <a id="backButton" href="index.html">Back to Dashboard</a>
+  </section>
+
+  <script>
+    const quizData = [
+      {
+        question: "1. What does HTML stand for?",
+        options: ["Hyperlinks and Text Markup Language", "Home Tool Markup Language", "Hyper Text Markup Language", "Hyper Text Markdown Language"],
+        answer: "Hyper Text Markup Language"
+      },
+      {
+        question: "2. What does CSS stand for?",
+        options: ["Cascading Style Sheets", "Creative Style Syntax", "Computer Style Sheet", "Colorful Style Sheets"],
+        answer: "Cascading Style Sheets"
+      },
+      {
+        question: "3. Inside which HTML element do we put the JavaScript?",
+        options: ["<js>", "<javascript>", "<script>", "<code>"],
+        answer: "<script>"
+      },
+      {
+        question: "4. Which company developed JavaScript?",
+        options: ["Microsoft", "Netscape", "Google", "Sun Microsystems"],
+        answer: "Netscape"
+      },
+      {
+        question: "5. What symbol is used for single-line comments in JavaScript?",
+        options: ["//", "#", "/*", "--"],
+        answer: "//"
+      },
+      {
+        question: "6. Which tag is used to create a hyperlink in HTML?",
+        options: ["<a>", "<link>", "<href>", "<url>"],
+        answer: "<a>"
+      },
+      {
+        question: "7. Which keyword is used to declare a variable in JavaScript?",
+        options: ["let", "var", "const", "All of the above"],
+        answer: "All of the above"
+      },
+      {
+        question: "8. Which property is used in CSS to change the text color?",
+        options: ["font-color", "color", "text-color", "foreground"],
+        answer: "color"
+      },
+      {
+        question: "9. How do you write 'Hello World' in an alert box in JavaScript?",
+        options: ["msg('Hello World')", "alertBox('Hello World')", "alert('Hello World')", "msgBox('Hello World')"],
+        answer: "alert('Hello World')"
+      },
+      {
+        question: "10. What does DOM stand for?",
+        options: ["Document Object Model", "Data Object Management", "Desktop Oriented Model", "Document Order Method"],
+        answer: "Document Object Model"
+      }
+    ];
+
+    const form = document.getElementById("quizForm");
+
+    quizData.forEach((q, index) => {
+      const questionBlock = document.createElement("div");
+      questionBlock.classList.add("question");
+
+      const qTitle = document.createElement("h3");
+      qTitle.innerText = q.question;
+      questionBlock.appendChild(qTitle);
+
+      const optionsBlock = document.createElement("div");
+      optionsBlock.classList.add("options");
+
+      q.options.forEach(option => {
+        const label = document.createElement("label");
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = `q${index}`;
+        input.value = option;
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(" " + option));
+        optionsBlock.appendChild(label);
+      });
+
+      questionBlock.appendChild(optionsBlock);
+      form.appendChild(questionBlock);
+    });
+
+    document.getElementById("submitBtn").addEventListener("click", () => {
+      let score = 0;
+      quizData.forEach((q, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        if (selected && selected.value === q.answer) {
+          score++;
+        }
+      });
+      document.getElementById("result").innerText = `You scored ${score} out of ${quizData.length}`;
+    });
+  </script>
+</body>
+</html>

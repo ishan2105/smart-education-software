@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Android Development Course | Smart Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #181818;
+      color: #f1f1f1;
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #232526 0%, #43cea2 100%);
+      color: #ffd700;
+      padding: 2.5rem 1rem 1.5rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      color: #4fc3f7;
+      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+      letter-spacing: 1.5px;
+      text-shadow: 0 2px 8px #0008;
+    }
+    header p {
+      color: #ffd700;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .back-dashboard {
+      display: inline-block;
+      margin: 1.5rem 0 1rem 2rem;
+      padding: 0.6rem 1.2rem;
+      background: #232526;
+      color: #ffd700;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      transition: background 0.2s, color 0.2s;
+    }
+    .back-dashboard:hover {
+      background: #4fc3f7;
+      color: #181818;
+    }
+    main {
+      background: #23272b;
+      max-width: 950px;
+      margin: 2rem auto;
+      padding: 2.5rem 2rem;
+      border-radius: 18px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+    }
+    h2 {
+      color: #43cea2;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .course-section {
+      margin-bottom: 2.2rem;
+    }
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.7rem;
+      line-height: 1.6;
+    }
+    .notes-box {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 1.2rem 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+    }
+    .notes-box h3 {
+      color: #ffd700;
+      margin-top: 0;
+    }
+    .video-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .video-card {
+      background: #181a20;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(79,195,247,0.08);
+      text-align: left;
+    }
+    .video-card h3 {
+      color: #ffd700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .video-card iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      background: #000;
+    }
+    @media (max-width: 900px) {
+      main { padding: 1rem; }
+      .video-list { grid-template-columns: 1fr; }
+      .back-dashboard { margin-left: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Android Development</h1>
+    <p>Welcome to your course dashboard! Start learning and track your progress below.</p>
+  </header>
+
+  <a href="index.html" class="back-dashboard">← Back to Dashboard</a>
+
+  <main>
+    <section class="course-section">
+      <h2>What You'll Learn</h2>
+      <ul>
+        <li>Android Studio & Project Setup</li>
+        <li>Java/Kotlin Programming Basics</li>
+        <li>Layouts, Views, and UI Components</li>
+        <li>Activities, Intents, and Navigation</li>
+        <li>Data Storage: SQLite, SharedPreferences, Room</li>
+        <li>Networking & REST APIs</li>
+        <li>Material Design & Animations</li>
+        <li>Publishing Your App</li>
+        <li>Mini Projects & Assignments</li>
+      </ul>
+    </section>
+
+    <section class="course-section">
+      <h2>Elaborated Notes</h2>
+      <div class="notes-box">
+        <h3>1. Android Studio & Project Setup</h3>
+        <ul>
+          <li><strong>Installation:</strong> Download and install Android Studio from the official website.</li>
+          <li><strong>Creating a Project:</strong> Start a new project, choose templates, configure SDK.</li>
+          <li><strong>Project Structure:</strong> Understand folders like <code>app</code>, <code>src</code>, <code>res</code>, <code>manifest</code>.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>2. Java/Kotlin Programming Basics</h3>
+        <ul>
+          <li><strong>Variables & Data Types:</strong> int, float, String, Boolean, etc.</li>
+          <li><strong>Control Flow:</strong> if, else, when (Kotlin), switch (Java), loops.</li>
+          <li><strong>Functions & Classes:</strong> Defining and using functions, OOP basics.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>3. Layouts, Views, and UI Components</h3>
+        <ul>
+          <li><strong>XML Layouts:</strong> Design UI using XML files.</li>
+          <li><strong>Common Views:</strong> TextView, EditText, Button, ImageView, RecyclerView.</li>
+          <li><strong>ViewGroups:</strong> LinearLayout, RelativeLayout, ConstraintLayout.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>4. Activities, Intents, and Navigation</h3>
+        <ul>
+          <li><strong>Activity Lifecycle:</strong> onCreate, onStart, onResume, onPause, onStop, onDestroy.</li>
+          <li><strong>Intents:</strong> Explicit and implicit intents for navigation and actions.</li>
+          <li><strong>Navigation:</strong> Navigating between activities and passing data.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>5. Data Storage</h3>
+        <ul>
+          <li><strong>SharedPreferences:</strong> Store simple key-value pairs.</li>
+          <li><strong>SQLite Database:</strong> Structured data storage using SQL.</li>
+          <li><strong>Room Library:</strong> Modern SQLite wrapper for easier database management.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>6. Networking & REST APIs</h3>
+        <ul>
+          <li><strong>HTTP Requests:</strong> Using libraries like Retrofit or Volley.</li>
+          <li><strong>JSON Parsing:</strong> Handling API responses.</li>
+          <li><strong>Permissions:</strong> Requesting internet/network permissions in manifest.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>7. Material Design & Animations</h3>
+        <ul>
+          <li><strong>Material Components:</strong> Buttons, cards, toolbars, navigation drawers.</li>
+          <li><strong>Animations:</strong> Property animations, transitions, and motion layout.</li>
+        </ul>
+      </div>
+      <div class="notes-box">
+        <h3>8. Publishing Your App</h3>
+        <ul>
+          <li><strong>App Signing:</strong> Generate a signed APK/AAB for release.</li>
+          <li><strong>Play Store Console:</strong> Steps to publish your app on Google Play.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="course-section">
+      <h2>Course Videos</h2>
+      <div class="video-list">
+        <div class="video-card">
+          <h3>1. Introduction to Android Studio</h3>
+          <iframe src="https://www.youtube.com/embed/fis26HvvDII" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>2. Java/Kotlin Basics</h3>
+          <iframe src="https://www.youtube.com/embed/SwSbnmq6p2I" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>3. Building Your First App</h3>
+          <iframe src="https://www.youtube.com/embed/mXjZQX3UzOs" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>4. UI Design & Layouts</h3>
+          <iframe src="https://www.youtube.com/embed/BBWyXo-3JGQ" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>5. Working with APIs</h3>
+          <iframe src="https://www.youtube.com/embed/5b8g-g3Xl6A" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>6. Data Storage in Android</h3>
+          <iframe src="https://www.youtube.com/embed/312RhjfetP8" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>7. Material Design & Animations</h3>
+          <iframe src="https://www.youtube.com/embed/1rP3nNY2hTo" allowfullscreen></iframe>
+        </div>
+        <div class="video-card">
+          <h3>8. Publishing Your App</h3>
+          <iframe src="https://www.youtube.com/embed/6aZbJS6LZbs" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
